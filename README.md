@@ -1,1 +1,3 @@
-<h1 style="align: center">kmergedosdos.github.io</h1>
+<h1 align="center">
+    kmergedosdos.github.io
+</h1>
