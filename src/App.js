@@ -1,9 +1,9 @@
+import Layout from "./layouts/Layout";
+
 function App() {
   return (
-    <div className="App">
-      <p>
-        Hello World, my name is Kmerge!
-      </p>
+    <div className="app-container">
+      <Layout/>
     </div>
   );
 }

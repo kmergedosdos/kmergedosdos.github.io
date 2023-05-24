@@ -1,0 +1,15 @@
+@import url('../../index.css');
+
+.footer {
+  text-align: center;
+  padding: 1.2rem;
+}
+
+.footer__text, .footer__link {
+  color: #6f6f6f;
+  font-size: 1.4rem;
+}
+
+.footer__text span {
+  color: var(--text-body);
+}

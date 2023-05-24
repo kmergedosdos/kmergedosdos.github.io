@@ -1,13 +1,83 @@
-body {
-  margin: 0;
-  font-family: 'Inter', 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+:root {
+  --bg-dark: #071013;
+  --bg-light: #d2bba0;
+  --primary: #d2bba0;
+  --primary--dark: #9F7E69;
+  --primary--light: #F2EFC7;
+  --primary--lighter: #F7FFE0;
+  --text-head: #ebebeb;
+  --text-subhead: #d9d9d9;
+  --text-body: #bebebe;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html {
+  font-size: 10px;
+}
+
+body {
+  margin: 0;
+  font-size: 1.8rem;
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--text-body);
+  background-color: var(--bg-dark);
+}
+
+code, button, a {
+  font-family: 'Roboto Mono', monospace;
+  font-weight: normal;
+  color: var(--primary);
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 74px;
+  font-weight: bold;
+  color: var(--text-head);
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: bold;
+  color: var(--text-head);
+}
+
+h3 {
+  font-size: 30;
+  font-weight: normal;
+}
+
+h4 {
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 1.6em;
+  color: var(--text-subhead);
+}
+
+p {
+  line-height: 1.6em;
+}
+
+::selection {
+  background-color: var(--primary--dark);
+}
+
+.btn {
+  font-size: medium;
+  width: fit-content;
+  border: 1px solid var(--primary);
+  border-radius: 5px;
+  padding: 0.8em 2.8em;
+  color: var(--primary);
+  background: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  color: var(--primary--lighter);
+  border-color: var(--primary--lighter);
 }

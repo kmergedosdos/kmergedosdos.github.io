@@ -1,0 +1,19 @@
+@import url("../index.css");
+
+.layout {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  column-gap: 3em;
+}
+
+.layout__navbar, .layout__menubar {
+  width: 150px;
+  position: relative;
+  background-color: rgba(0,0,0,0.1);
+}
+
+.layout__content {
+  /* width: 80%; */
+  flex: 1;
+}
