@@ -18,7 +18,7 @@ function Menubar() {
             <a href="#projects">Check out my works</a>
           </div>
           <div className={`menubar__card__item menubar__card__item--${isOpen ? 'open': 'close'}`}>
-            <a href="../../assets/KmergeBoimilleyrDosdos-Resume.pdf" download>Download my resume</a>
+            <a href="https://github.com/kmergedosdos/kmergedosdos.github.io/blob/master/src/assets/KmergeBoimilleyrDosdos-Resume.pdf?raw=true" download>Download my resume</a>
           </div>
         </div>
       </div>
