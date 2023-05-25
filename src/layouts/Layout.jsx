@@ -6,6 +6,7 @@ import NavBar from '../components/Navbar'
 import Projects from '../containers/Projects'
 import Contact from '../containers/Contact'
 import Footer from '../components/Footer'
+import Menubar from '../components/Menubar'
 
 function Layout() {
   return (
@@ -21,7 +22,7 @@ function Layout() {
         <Footer/>
       </div>
       <div className="layout__menubar">
-        {/* Menu */}
+        <Menubar/>
       </div>
     </div>
   )
