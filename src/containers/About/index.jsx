@@ -27,7 +27,7 @@ function About() {
           <div className="about__content__text__skills">
             {
               TECHS.map(tech => (
-                <TechTile title={tech}/>
+                <TechTile key={tech} title={tech}/>
               ))
             }
           </div>
