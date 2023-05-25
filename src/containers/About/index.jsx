@@ -5,6 +5,9 @@ import TECHS from './techs.json'
 import TechTile from '../../components/TechTile'
 
 function About() {
+  const profYears = new Date().getFullYear() - 2021;
+  const codingYears = new Date().getFullYear() - 2018;
+
   return (
     <section className='about'>
       <h2 className="about__header">
@@ -13,7 +16,7 @@ function About() {
       <div className="about__content">
         <div className="about__content__text">
           <p className="about__content__text__body">
-            My name is Kmerge and I love creating valuable software with good UX designs. I have 1+ years of professional experience mostly involving front end development. I also have 4+ years of background writing code in several programming languages.
+            My name is Kmerge and I love creating valuable software with good UX designs. I have {profYears}+ years of professional experience mostly involving front end development. I also have {codingYears}+ years of background writing code in several programming languages.
           </p>
           <p className="about__content__text__body">
             I recently earned my bachelor's degree in computer science. Currently, I've been focusing on developing more stuffs on the internet and exploring more technologies to become a rock-hard full stack developer.
