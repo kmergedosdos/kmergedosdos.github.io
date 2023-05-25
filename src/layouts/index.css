@@ -17,3 +17,28 @@
   /* width: 80%; */
   flex: 1;
 }
+
+@media (max-width: 1200px) {
+  .layout__navbar, .layout__menubar {
+    width: 100px;
+  }
+}
+
+@media (max-width: 900px) {
+  .layout {
+    display: block;
+    padding: 0 8em;
+  }
+}
+
+@media (max-width: 768px) {
+  .layout {
+    padding: 0 5em;
+  }
+}
+
+@media (max-width: 600px) {
+  .layout {
+    padding: 0 2em;
+  }
+}

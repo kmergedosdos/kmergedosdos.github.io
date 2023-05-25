@@ -3,7 +3,7 @@ import './index.css'
 
 function Projects() {
   return (
-    <section className="projects">
+    <section className="projects" id='projects'>
       <h2 className="projects__header">
         Recent projects I've done
       </h2>

@@ -15,4 +15,17 @@
 .home__subheader {
   margin-top: 3rem;
   margin-bottom: 4em;
+  max-width: 30em;
+}
+
+@media (max-width: 768px) {
+  .home__subheader {
+    max-width: 25em;
+  }
+}
+
+@media (max-width: 600px) {
+  .home__subheader {
+    max-width: 23em;
+  }
 }

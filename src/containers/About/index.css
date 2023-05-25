@@ -10,11 +10,13 @@
 
 .about__content {
   display: flex;
-  gap: 5em;
+  gap: 1em;
 }
 
 .about__content__text {
-  width: 50%;
+  /* width: 70%; */
+  flex: 1;
+  max-width: 30em;
 }
 
 .about__content__text__skills {
@@ -35,4 +37,32 @@
 
 .about__content__image img {
   width: 100%;
+}
+
+@media (min-width: 1200px) {
+  .about__content__image {
+    transform: translateX(50px);
+  }
+}
+
+@media (max-width: 1200px) {
+  .about__content__image {
+    width: 200px;
+    height: 200px;
+    transform: translateX(20px);
+  }
+}
+
+@media (max-width: 900px) {
+  .about__header {
+    width: fit-content;
+    margin: 1em auto;
+  }
+  .about__content {
+    flex-direction: column-reverse;
+  }
+  .about__content__image {
+    margin: 1.4em auto;
+    transform: translateX(0);
+  }
 }

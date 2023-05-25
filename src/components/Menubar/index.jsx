@@ -15,7 +15,7 @@ function Menubar() {
       <div className="menubar__card-container">
         <div className="menubar__card">
           <div className={`menubar__card__item menubar__card__item--${isOpen ? 'open': 'close'}`}>
-            <a href="">Check out my works</a>
+            <a href="#projects">Check out my works</a>
           </div>
           <div className={`menubar__card__item menubar__card__item--${isOpen ? 'open': 'close'}`}>
             <a href="../../assets/KmergeBoimilleyrDosdos-Resume.pdf" download>Download my resume</a>
