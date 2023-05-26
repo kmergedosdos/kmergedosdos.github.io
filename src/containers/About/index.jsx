@@ -9,7 +9,7 @@ function About() {
   const codingYears = new Date().getFullYear() - 2018;
 
   return (
-    <section className='about'>
+    <section className='about' id='about'>
       <h2 className="about__header">
         A little bit about me
       </h2>
