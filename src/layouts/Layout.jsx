@@ -12,12 +12,12 @@ function Layout() {
   return (
     <div className='layout'>
       <div className="layout__navbar">
-        {/* <NavBar/> */}
+        <NavBar/>
       </div>
       <div className="layout__content">
         <Home/>
         <About/>
-        {/* <Projects/> */}
+        <Projects/>
         <Contact/>
         <Footer/>
       </div>

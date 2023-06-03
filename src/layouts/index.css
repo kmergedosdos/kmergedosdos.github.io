@@ -8,13 +8,13 @@
 }
 
 .layout__navbar, .layout__menubar {
-  width: 150px;
+  /* width: 150px; */
   position: relative;
   /* background-color: rgba(255,255,255,0.1); */
 }
 
 .layout__content {
-  /* width: 80%; */
+  max-width: 900px;
   flex: 1;
 }
 
@@ -29,6 +29,10 @@
     display: block;
     padding: 0 8em;
   }
+  .layout__navbar {
+    position: fixed;
+    left: 0;
+  }
 }
 
 @media (max-width: 768px) {
@@ -39,6 +43,6 @@
 
 @media (max-width: 600px) {
   .layout {
-    padding: 0 2em;
+    padding: 0 1.2em;
   }
 }
