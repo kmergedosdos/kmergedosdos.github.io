@@ -51,11 +51,14 @@
   transition: all 0.275s ease;
 }
 
+.navbar__nav__item__link:hover {
+  color: var(--primary);
+}
+
 .navbar__nav__item__link.active {
   color: var(--primary);
   padding-right: 0.5em;
   font-weight: bold;
-  /* transform: translateX(-100%) translateX(-1.5em) scale(1.1); */
 }
 
 .navbar__nav__item-indicator {
@@ -79,7 +82,9 @@
 .navbar__social-links {
   display: flex;
   flex-direction: column;
-  padding: 1em;
+  justify-content: space-evenly;
+  gap: 1.5em;
+  padding: 2em 1em;
 }
 
 @media (max-width: 1200px) {

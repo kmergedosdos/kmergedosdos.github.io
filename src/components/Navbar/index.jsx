@@ -2,6 +2,9 @@ import React, { useEffect } from 'react'
 import './index.css'
 
 import siteLogo from '../../assets/site-logo.svg'
+import iconLinkedIn from '../../assets/icon-linkedin.svg'
+import iconGitHub from '../../assets/icon-github.svg'
+import iconCodePen from '../../assets/icon-codepen.svg'
 
 function Navbar() {
 
@@ -69,9 +72,9 @@ function Navbar() {
         </ul>
       </nav>
       <div className="navbar__social-links">
-        <a href="https://www.linkedin.com/in/kmergeboi" target='_blank' rel="noreferrer" className="social-links__item">linkedin</a>
-        <a href="https://github.com/kmergedosdos" target='_blank' rel="noreferrer" className="social-links__item">github</a>
-        <a href="https://codepen.io/kmerge_boi" target='_blank' rel="noreferrer" className="social-links__item">codepen</a>
+        <a href="https://www.linkedin.com/in/kmergeboi" target='_blank' rel="noreferrer" className="social-links__item"><img src={iconLinkedIn} alt="Linkedin" /></a>
+        <a href="https://github.com/kmergedosdos" target='_blank' rel="noreferrer" className="social-links__item"><img src={iconGitHub} alt="GitHub" /></a>
+        <a href="https://codepen.io/kmerge_boi" target='_blank' rel="noreferrer" className="social-links__item"><img src={iconCodePen} alt="CodePen" /></a>
       </div>
     </div>
   )
