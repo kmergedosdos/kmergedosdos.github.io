@@ -2,47 +2,39 @@
 
 .layout {
   min-height: 100vh;
+  padding: 0 1.2em;
   display: flex;
   justify-content: center;
-  column-gap: 3em;
-}
-
-.layout__navbar, .layout__menubar {
-  /* width: 150px; */
-  position: relative;
-  /* background-color: rgba(255,255,255,0.1); */
 }
 
 .layout__content {
   max-width: 900px;
-  flex: 1;
 }
 
-@media (max-width: 1200px) {
-  .layout__navbar, .layout__menubar {
-    width: 100px;
-  }
-}
-
-@media (max-width: 900px) {
+@media (min-width: 600px) {
   .layout {
-    display: block;
-    padding: 0 8em;
-  }
-  .layout__navbar {
-    position: fixed;
-    left: 0;
+    padding: 0 3em;
   }
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .layout {
     padding: 0 5em;
   }
 }
 
-@media (max-width: 600px) {
+@media (min-width: 1200px) {
   .layout {
-    padding: 0 1.2em;
+    padding: 0;
+  }
+
+  .layout__navbar {
+    display: block;
+    position: relative;
+    width: 200px;
+  }
+  
+  .layout__menubar {
+    width: 200px;
   }
 }

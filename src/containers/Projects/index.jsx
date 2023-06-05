@@ -5,7 +5,7 @@ function Projects() {
   return (
     <section className="projects" id='work'>
       <h2 className="projects__header">
-        Recent projects I've done
+        Works I've done
       </h2>
       <p className="projects__body">
         These are some of the projects I have worked on so far.

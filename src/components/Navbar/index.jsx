@@ -34,8 +34,6 @@ function Navbar() {
             link.classList.remove('active');
             if (link.hash.includes(activeSectionId)) link.classList.add('active');
           });
-          // const activeLink = navItemLinks.find(item => item.hash === `#${activeSectionId}`);
-          // activeLink.classList.add('active');
         }
       });
     }

@@ -3,6 +3,7 @@
 .menubar {
   position: fixed;
   top: 50px;
+  transform: translateX(2em);
 }
 
 .menubar__card-container {
@@ -44,20 +45,31 @@
   text-decoration: underline;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1200px) {
+  .menubar {
+    transform: none;
+  }
+  .menubar__card {
+    min-width: 250px;
+  }
+}
+
+@media (max-width: 1200px) {
   .menubar {
     top: 50px;
     right: 50px;
   }
 }
 
+@media (max-width: 768px) {
+  .menubar {
+    right: 30px;
+  }
+}
+
 @media (max-width: 600px) {
   .menubar {
     top: 30px;
-    right: 30px;
-  }
-  .menubar__card {
-    min-width: 250px;
   }
 }
 

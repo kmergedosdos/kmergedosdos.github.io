@@ -1,7 +1,6 @@
 @import url('../../index.css');
 
 .about {
-  /* padding: 10rem 0; */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -14,7 +13,6 @@
 }
 
 .about__content__text {
-  /* width: 70%; */
   flex: 1;
   max-width: 30em;
 }
@@ -41,7 +39,9 @@
 
 @media (min-width: 1200px) {
   .about__content__image {
-    transform: translateX(50px);
+    width: 220px;
+    height: 220px;
+    margin-right: 0;
   }
 }
 
@@ -60,6 +60,9 @@
   }
   .about__content {
     flex-direction: column-reverse;
+  }
+  .about__content__text {
+    max-width: none;
   }
   .about__content__image {
     margin: 1.4em auto;
