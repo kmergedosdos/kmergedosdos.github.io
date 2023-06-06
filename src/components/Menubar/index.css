@@ -61,7 +61,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .menubar {
     right: 30px;
   }
@@ -70,6 +70,7 @@
 @media (max-width: 600px) {
   .menubar {
     top: 30px;
+    right: 1.2em;
   }
 }
 
