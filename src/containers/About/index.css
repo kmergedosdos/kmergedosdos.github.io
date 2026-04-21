@@ -1,0 +1,71 @@
+@import url('../../index.css');
+
+.about {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about__content {
+  display: flex;
+  gap: 1em;
+}
+
+.about__content__text {
+  flex: 1;
+  max-width: 30em;
+}
+
+.about__content__text__skills {
+  margin-top: 1.5em;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+
+.about__content__image {
+  width: 256px;
+  height: 256px;
+  margin: 1.4em;
+  border: 3px solid var(--primary);
+  border-radius: 1em;
+  overflow: hidden;
+}
+
+.about__content__image img {
+  width: 100%;
+}
+
+@media (min-width: 1200px) {
+  .about__content__image {
+    width: 220px;
+    height: 220px;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 1200px) {
+  .about__content__image {
+    width: 200px;
+    height: 200px;
+    transform: translateX(20px);
+  }
+}
+
+@media (max-width: 900px) {
+  .about__header {
+    width: fit-content;
+    margin: 1em auto;
+  }
+  .about__content {
+    flex-direction: column-reverse;
+  }
+  .about__content__text {
+    max-width: none;
+  }
+  .about__content__image {
+    margin: 1.4em auto;
+    transform: translateX(0);
+  }
+}
