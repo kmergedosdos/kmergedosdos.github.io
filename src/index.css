@@ -51,7 +51,7 @@ h2 {
 }
 
 h2::before {
-  content: "<";
+  content: "</";
   font-size: 3rem;
   color: var(--primary);
   position: absolute;
@@ -61,7 +61,7 @@ h2::before {
 }
 
 h2::after {
-  content: "/>";
+  content: ">";
   font-size: 3rem;
   color: var(--primary);
   position: absolute;
