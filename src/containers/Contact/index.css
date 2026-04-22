@@ -7,6 +7,12 @@
 }
 
 .contact__body {
-  max-width: 35em;
+  max-width: 32em;
   text-align: center;
+}
+
+@media (max-width: 520px) {
+  .contact__body__newline {
+    display: none;
+  }
 }

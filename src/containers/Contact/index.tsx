@@ -5,21 +5,24 @@ function Contact() {
     <section className="contact" id="contact">
       <h2 className="contact__header">Let's connect</h2>
       <p className="contact__body">
-        Got an exciting project you want to discuss about, or just want to say
-        Hello? Shoot me an email at{" "}
+        Starting a project from scratch or scaling your existing product?{" "}
+        <br className="contact__body__newline" />
+        I build fast, scalable full-stack systems, with a focus on real-time and
+        API-driven solutions.
+        <br />
+        <br />
+        Reach out at{" "}
         <a
           href="mailto: kpdosdos@gmail.com"
           style={{ textDecoration: "underline" }}
         >
           kpdosdos@gmail.com
-        </a>
-        .
+        </a>{" "}
         <br />
-        <br />
-        <br />
-        or instantly
+        or send a quick message below.
       </p>
-      <button className="btn">drop me a message.</button>
+      <br />
+      <button className="btn">Drop a message</button>
     </section>
   );
 }
