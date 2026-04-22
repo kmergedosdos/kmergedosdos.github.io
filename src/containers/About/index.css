@@ -1,4 +1,4 @@
-@import url('../../index.css');
+@import url("../../index.css");
 
 .about {
   min-height: 100vh;
@@ -17,13 +17,6 @@
   max-width: 30em;
 }
 
-.about__content__text__skills {
-  margin-top: 1.5em;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1em;
-}
-
 .about__content__image {
   width: 256px;
   height: 256px;
@@ -35,6 +28,12 @@
 
 .about__content__image img {
   width: 100%;
+}
+
+.about__skills__content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
 }
 
 @media (min-width: 1200px) {

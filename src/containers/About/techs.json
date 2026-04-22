@@ -1,17 +1,29 @@
 [
-  "React",
-  "Redux",
-  "Node.js",
-  "MongoDB",
-  "Material UI",
-  "WordPress",
-  "PHP",
-  "JavaScript",
-  "Python",
-  "C#",
-  "SQL",
-  "HTML5",
-  "CSS",
-  "Chrome DevTools",
-  "Git"
+  {
+    "name": "Frontend (Web)",
+    "technologies": ["Next.js", "React", "Redux Toolkit", "Zustand"]
+  },
+  {
+    "name": "Backend",
+    "technologies": [
+      "Node.js",
+      "PHP Laravel",
+      "C# .NET",
+      "Python (Django REST Framework)"
+    ]
+  },
+  {
+    "name": "Mobile",
+    "technologies": ["React Native", "Kotlin (Jetpack Compose)"]
+  },
+  {
+    "name": "Systems & Integrations",
+    "technologies": [
+      "REST APIs",
+      "API Integrations",
+      "Real-time Systems (WebSockets)",
+      "Headless CMS",
+      "WordPress"
+    ]
+  }
 ]

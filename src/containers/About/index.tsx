@@ -5,7 +5,6 @@ import TechTile from "../../components/TechTile";
 
 function About() {
   const profYears = new Date().getFullYear() - 2021;
-  const codingYears = new Date().getFullYear() - 2018;
 
   return (
     <section className="about" id="about">
@@ -13,29 +12,34 @@ function About() {
       <div className="about__content">
         <div className="about__content__text">
           <p className="about__content__text__body">
-            My name is Kmerge and I love creating valuable software with good UX
-            designs. I have {profYears}+ years of professional experience mostly
-            involving front end development. I also have {codingYears}+ years of
-            background writing code in several programming languages.
+            My name is Kmerge and I'm a full-stack engineer who enjoys building
+            production-grade applications that are scalable, maintainable,
+            optimized and designed for real-world use.
           </p>
           <p className="about__content__text__body">
-            I recently earned my bachelor's degree in computer science.
-            Currently, I've been focusing on developing more stuffs on the
-            internet and exploring more technologies to become a rock-hard full
-            stack developer.
+            With {profYears} years of professional experience, my work has
+            evolved from developing business websites to architecting complex
+            systems, including real-time platforms and API-driven applications.
           </p>
           <p className="about__content__text__body">
-            Some of the technologies I've used include but not limited to the
-            following:
+            I specialize in frontend architecture using Next.js and React,
+            building reusable codebase that improve development speed and
+            scalability, while also working across backend systems to deliver
+            complete, end-to-end solutions.
           </p>
-          <div className="about__content__text__skills">
-            {TECHS.map((tech) => (
-              <TechTile key={tech} title={tech} />
-            ))}
-          </div>
+          <p className="about__content__text__body">
+            Here's some of the skills and technologies I work with:
+          </p>
         </div>
         <div className="about__content__image">
           <img src={profilePhoto} alt="Profile" />
+        </div>
+      </div>
+      <div className="about__skills">
+        <div className="about__skills__content">
+          {TECHS.flatMap((category) => category.technologies).map((tech) => (
+            <TechTile key={tech} title={tech} />
+          ))}
         </div>
       </div>
     </section>
