@@ -3,14 +3,17 @@
 
 :root {
   --bg-dark: #071013;
-  --bg-light: #d2bba0;
-  --primary: #d2bba0;
-  --primary--dark: #9f7e69;
-  --primary--light: #f2efc7;
-  --primary--lighter: #f7ffe0;
-  --text-head: #ebebeb;
-  --text-subhead: #d9d9d9;
-  --text-body: #bebebe;
+
+  /* Primary  */
+  --primary: #d6c2a8;
+  --primary--dark: #8f6f5d;
+  --primary--light: #eadbc7;
+  --primary--lighter: #f5efe3;
+
+  /* Text hierarchy */
+  --text-head: #f0f0f0;
+  --text-subhead: #d6d6d6;
+  --text-body: #b8b8b8;
 }
 
 html {
@@ -101,8 +104,20 @@ p {
 }
 
 .btn:hover {
-  color: var(--primary--lighter);
-  border-color: var(--primary--lighter);
+  color: var(--primary--light);
+  border-color: var(--primary--light);
+}
+
+.btn--contained {
+  border: 1px solid var(--primary);
+  color: var(--bg-dark);
+  background: var(--primary);
+}
+
+.btn--contained:hover {
+  color: var(--bg-dark);
+  background: var(--primary--light);
+  border-color: var(--primary--light);
 }
 
 @media (max-width: 1200px) {
