@@ -19,8 +19,8 @@ function Home() {
       </div>
       <div className="home__proof">
         <p>
-          <span>✦</span> Built platforms serving 20K+ users • Led 3–5 person
-          engineering teams
+          <span>✦</span> Built platforms serving 20K+ users <span>✦</span>{" "}
+          Delivered 10+ web projects to clients
         </p>
       </div>
     </section>

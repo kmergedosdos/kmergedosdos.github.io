@@ -12,19 +12,19 @@ function About() {
       <div className="about__content">
         <div className="about__content__text">
           <p className="about__content__text__body">
-            My name is Kmerge and I'm a full-stack engineer who enjoys building
-            production-grade applications that are scalable, maintainable,
-            optimized and designed for real-world use.
+            I’m a full-stack engineer focused on building production-grade
+            applications that are scalable, maintainable, and designed for
+            real-world use.
           </p>
           <p className="about__content__text__body">
-            With {profYears} years of professional experience, my work has
-            evolved from developing business websites to architecting complex
-            systems, including real-time platforms and API-driven applications.
+            Over the past {profYears} years, my work has evolved from developing
+            business websites to architecting complex systems, including
+            real-time platforms and API-driven applications.
           </p>
           <p className="about__content__text__body">
             I specialize in frontend architecture using Next.js and React,
-            building reusable codebase that improve development speed and
-            scalability, while also working across backend systems to deliver
+            building reusable systems that improve development speed and
+            scalability, while working across backend services to deliver
             complete, end-to-end solutions.
           </p>
           <p className="about__content__text__body">
