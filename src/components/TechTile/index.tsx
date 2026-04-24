@@ -1,7 +1,11 @@
 import "./index.css";
 
 function TechTile({ title }: { title: string }) {
-  return <code className="techtile">{title}</code>;
+  return (
+    <div className="techtile">
+      <code>{title}</code>
+    </div>
+  );
 }
 
 export default TechTile;
