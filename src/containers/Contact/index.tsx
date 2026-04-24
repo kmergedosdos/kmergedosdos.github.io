@@ -3,7 +3,7 @@ import "./index.css";
 function Contact() {
   return (
     <section className="contact" id="contact">
-      <h2 className="contact__header">Let's connect</h2>
+      <h2 className="contact__header">Let's work together</h2>
       <p className="contact__body">
         Starting a project from scratch or scaling your existing product?{" "}
         <br className="contact__body__newline" />
