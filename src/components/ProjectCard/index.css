@@ -1,0 +1,46 @@
+@import url("../../index.css");
+
+.project-card {
+  height: 100%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: var(--bg-light);
+  color: var(--text-body);
+  padding: 1em;
+  padding-top: 0.5em;
+  border-radius: 1em;
+  transition: all 0.3s ease;
+}
+
+.project-card:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.project-card__title {
+  font-size: 2rem;
+  font-weight: semi-bold;
+  color: var(--text-subhead);
+}
+
+.project-card__description {
+  margin-top: 0.5em;
+  font-size: 1.6rem;
+}
+
+.project-card__key-impact {
+  list-style: none;
+  padding-left: 1em;
+  line-height: 1.6em;
+  font-size: 1.3rem;
+}
+
+.project-card__key-impact li::marker {
+  content: "✦ ";
+  color: var(--primary);
+}
+
+.project-card__technologies {
+  margin-top: 1em;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em;
+}

@@ -3,6 +3,8 @@
 
 :root {
   --bg-dark: #071013;
+  --bg-light: #10181b;
+  --bg-lighter: #1a2123;
 
   /* Primary  */
   --primary: #d6c2a8;

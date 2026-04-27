@@ -1,0 +1,35 @@
+[
+  {
+    "id": "project_001",
+    "title": "RoomMeet – Instagram Automation Engine",
+    "description": "API-driven platform that transforms manual Instagram DM workflows into a scalable and monetizable content pipeline.",
+    "keyImpact": [
+      "Processed 20,000+ submissions in year one",
+      "Replaced manual DM workflows with structured automation",
+      "Enabled paid priority posting through Stripe integration"
+    ],
+    "technologies": ["Next.js", "Meta Graph API", "Stripe API", "Mongoose"]
+  },
+  {
+    "id": "project_002",
+    "title": "Multilingual Chat & Automation Platform",
+    "description": "CRM-like chat support system that extends LINE OAs with AI translation, user segmentation, and automation workflows.",
+    "keyImpact": [
+      "Supported 5 languages with AI-powered translation",
+      "Real-time messaging using WebSockets",
+      "Automated workflows based on user segmentation"
+    ],
+    "technologies": ["Next.js", "PHP Laravel", "WebSockets", "LINE API"]
+  },
+  {
+    "id": "project_003",
+    "title": "Survey System Frontend Architecture",
+    "description": "Reusable and scalable React architecture for building schema-driven survey and form builder applications.",
+    "keyImpact": [
+      "Reduced new projects' setup time from days to under 2 days",
+      "Standardized architecture across multiple survey systems",
+      "Modular, schema-driven design for easy maintenance and scalability"
+    ],
+    "technologies": ["React", "TypeScript", "Zustand", "TailwindCSS"]
+  }
+]

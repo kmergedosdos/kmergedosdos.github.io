@@ -5,3 +5,30 @@
   justify-content: center;
   min-height: 100vh;
 }
+
+.projects__header {
+  margin-top: 25rem;
+}
+
+.projects__list {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1em;
+}
+
+.projects__list__item {
+  overflow: hidden;
+  border-radius: 1em;
+}
+
+@media (min-width: 900px) {
+  .projects__header {
+    margin-top: 15rem;
+  }
+}
+
+@media (min-width: 1080px) {
+  .projects__list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
