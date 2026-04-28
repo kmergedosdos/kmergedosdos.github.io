@@ -42,6 +42,10 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  text-decoration: underline;
+}
+
 h1 {
   font-size: 7.4rem;
   font-weight: bold;
@@ -103,6 +107,7 @@ p {
   color: var(--primary);
   background: none;
   cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 .btn:hover {
@@ -120,6 +125,11 @@ p {
   color: var(--bg-dark);
   background: var(--primary--light);
   border-color: var(--primary--light);
+}
+
+.btn--text {
+  border: none;
+  padding: 0;
 }
 
 @media (max-width: 1200px) {
