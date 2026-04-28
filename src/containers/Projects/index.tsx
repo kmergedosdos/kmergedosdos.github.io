@@ -15,6 +15,7 @@ function Projects() {
               description={project.description}
               keyImpact={project.keyImpact}
               technologies={project.technologies}
+              markdownLocation={project.markdownLocation}
             />
           </div>
         ))}
