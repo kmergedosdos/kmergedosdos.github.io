@@ -30,6 +30,6 @@
       "Standardized architecture across multiple survey systems",
       "Modular, schema-driven design for easy maintenance and scalability"
     ],
-    "technologies": ["React", "TypeScript", "Zustand", "TailwindCSS"]
+    "technologies": ["React", "TypeScript", "Zustand", "Axios"]
   }
 ]
