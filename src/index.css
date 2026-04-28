@@ -1,6 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 :root {
   --bg-dark: #071013;
   --bg-light: #10181b;
