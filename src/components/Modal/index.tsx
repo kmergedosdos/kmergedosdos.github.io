@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import "./index.css";
 
 interface ModalProps {
@@ -7,6 +8,19 @@ interface ModalProps {
 }
 
 export default function Modal({ children, open, onClose }: ModalProps) {
+  // Prevent background scrolling when modal is open
+  useEffect(() => {
+    if (open) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [open]);
+
   if (!open) return null;
 
   return (

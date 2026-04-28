@@ -30,19 +30,6 @@ export default function ProjectCard({
       .then((text) => setMdContent(text));
   }, [markdownLocation]);
 
-  // Prevent background scrolling when modal is open
-  useEffect(() => {
-    if (showDetails) {
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "";
-    }
-
-    return () => {
-      document.body.style.overflow = "";
-    };
-  }, [showDetails]);
-
   return (
     <div
       className="project-card"
