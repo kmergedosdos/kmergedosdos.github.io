@@ -13,8 +13,12 @@ export default function Modal({ children, open, onClose }: ModalProps) {
     <div className="modal">
       <div className="modal__box">
         <div className="modal__box__toolbar">
-          <button className="btn btn--text" onClick={onClose}>
-            <span>✖</span>Close
+          <button
+            title="Close"
+            className="btn btn--text btn--close"
+            onClick={onClose}
+          >
+            ✖
           </button>
         </div>
         <div className="modal__box__content">{children}</div>
