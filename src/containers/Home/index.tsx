@@ -3,7 +3,9 @@ import "./index.css";
 function Home() {
   return (
     <section className="home" id="home">
-      <code>Full-Stack Engineer • Systems Architecture</code>
+      <code className="home__role">
+        Full-Stack Engineer • <span>Systems Architecture</span>
+      </code>
       <h1 className="home__header">Kmerge Dosdos</h1>
       <h4 className="home__subheader">
         I architect and ship production-grade, API-driven applications – from
@@ -19,8 +21,10 @@ function Home() {
       </div>
       <div className="home__proof">
         <p>
-          <span>✦</span> Built platforms serving 20K+ users <span>✦</span>{" "}
-          Delivered 10+ web projects to clients
+          <span>✦</span> Built platforms serving 20K+ users
+        </p>
+        <p>
+          <span>✦</span> Delivered 10+ web projects to clients
         </p>
       </div>
     </section>

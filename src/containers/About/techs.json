@@ -5,25 +5,21 @@
   },
   {
     "name": "Backend",
-    "technologies": [
-      "Node.js",
-      "PHP Laravel",
-      "C# .NET",
-      "Python (Django REST Framework)"
-    ]
+    "technologies": ["Node.js", "PHP Laravel", "C# .NET", "Python", "Django"]
   },
   {
     "name": "Mobile",
-    "technologies": ["React Native", "Kotlin (Jetpack Compose)"]
+    "technologies": ["React Native", "Kotlin", "Jetpack Compose"]
   },
   {
     "name": "Systems & Integrations",
     "technologies": [
       "REST APIs",
       "API Integrations",
-      "Real-time Systems (WebSockets)",
-      "Headless CMS",
-      "WordPress"
+      "WebSockets",
+      "Real-time Systems",
+      "WordPress",
+      "Headless CMS"
     ]
   }
 ]

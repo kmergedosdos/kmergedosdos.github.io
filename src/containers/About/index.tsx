@@ -8,7 +8,7 @@ function About() {
 
   return (
     <section className="about" id="about">
-      <h2 className="about__header">A bit about me</h2>
+      <h2 className="about__header">About me</h2>
       <div className="about__content">
         <div className="about__content__text">
           <p className="about__content__text__body">

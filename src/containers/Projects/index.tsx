@@ -6,7 +6,7 @@ import projects from "./projects.json";
 function Projects() {
   return (
     <section className="projects" id="work">
-      <h2 className="projects__header">Works I've done</h2>
+      <h2 className="projects__header">Featured work</h2>
       <div className="projects__list">
         {projects.map((project) => (
           <div key={project.id} className="projects__list__item">

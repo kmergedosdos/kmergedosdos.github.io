@@ -11,11 +11,6 @@
   transition: all 0.3s ease;
 }
 
-.project-card:hover {
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-  background-color: transparent;
-}
-
 .project-card__title {
   font-size: 2rem;
   font-weight: semi-bold;
@@ -51,15 +46,6 @@
   padding-top: 1em;
 }
 
-.project-card__actions > .btn {
-  opacity: 0.6;
-  transition: all 0.3s ease;
-}
-
-.project-card__actions > .btn--hovered {
-  opacity: 1;
-}
-
 .project-card__actions > .btn:hover {
   text-decoration: underline;
 }
@@ -72,4 +58,20 @@
 .project-details h2::before,
 .project-details h2::after {
   content: none;
+}
+
+@media (min-width: 1080px) {
+  .project-card:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    background-color: transparent;
+  }
+
+  .project-card__actions > .btn {
+    opacity: 0.6;
+    transition: all 0.3s ease;
+  }
+
+  .project-card__actions > .btn--hovered {
+    opacity: 1;
+  }
 }
