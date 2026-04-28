@@ -8,7 +8,7 @@
       "Replaced manual DM workflows with structured automation",
       "Enabled paid priority posting through Stripe integration"
     ],
-    "technologies": ["Next.js", "Meta Graph API", "Stripe API", "Mongoose"],
+    "technologies": ["Next.js", "Meta Graph API", "Stripe API", "MongoDB"],
     "markdownLocation": "/docs/roommeet.md"
   },
   {

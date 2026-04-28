@@ -1,4 +1,4 @@
-## Instagram Submission & Posting Automation Platform (Client Project)
+## Instagram Submission & Posting Automation Platform
 
 ### Overview
 
@@ -50,7 +50,11 @@ I architected and engineered the system from the ground up to build a queue-base
 
 ### Tech Stack
 
-Next.js, TypeScript, MongoDB, Meta Graph API, NextAuth, Stripe, ImageKit, TailwindCSS
+- **Core Framework:** Next.js, TypeScript
+- **Database:** MongoDB
+- **Authentication:** NextAuth
+- **Integrations:** Meta Graph API, Stripe, ImageKit
+- **UI & Styling:** Tailwind CSS, Sass
 
 ### Links
 

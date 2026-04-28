@@ -48,7 +48,10 @@ I designed a reusable, modular frontend architecture specifically tailored for s
 
 ### Tech Stack
 
-React, TypeScript, React Router, Zustand, Axios, TailwindCSS
+- **Core Framework:** React, TypeScript
+- **Routing & Data Fetching:** React Router, Axios
+- **State Management:** Zustand
+- **UI System:** TailwindCSS
 
 ### Links
 
