@@ -11,11 +11,7 @@ function Contact() {
         API-driven solutions.
         <br />
         <br />
-        Reach out at{" "}
-        <a
-          href="mailto: kpdosdos@gmail.com"
-          style={{ textDecoration: "underline" }}
-        >
+        Reach out at <a href="mailto: kpdosdos@gmail.com">
           kpdosdos@gmail.com
         </a>{" "}
         <br />
