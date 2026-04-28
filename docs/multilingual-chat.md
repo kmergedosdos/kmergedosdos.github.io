@@ -49,9 +49,13 @@ I architected a real-time messaging interface that bridges the gap between raw A
 - Drove frontend implementation of messaging, translation, and automation features
 - Collaborated with backend team on API design and data contracts
 
-### Teck Stack
+### Tech Stack
 
-Next.js, TypeScript, PHP Laravel, WebSockets, LINE Messaging API, OpenAI API
+- **Core Frameworks:** Next.js, TypeScript, PHP Laravel
+- **Real-Time Communication:** WebSockets
+- **Database:** MySQL
+- **Integrations:** LINE Messaging API, OpenAI
+- **UI System:** Material UI, Sass
 
 ### Links
 
