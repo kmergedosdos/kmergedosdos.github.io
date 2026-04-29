@@ -1,0 +1,111 @@
+@import url("../../index.css");
+
+.contact-form__container {
+  width: 25em;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.contact-form__header {
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: var(--text-subhead);
+  margin: 0;
+  letter-spacing: 0.5px;
+}
+
+form {
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+
+label {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--text-subhead);
+  display: block;
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 1em 1.2em;
+  font-size: 1.6rem;
+  font-family: "Inter", sans-serif;
+  background-color: var(--bg-lighter);
+  color: var(--text-head);
+  border: 1px solid rgba(214, 194, 168, 0.2);
+  border-radius: 0.5em;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+textarea::placeholder {
+  color: var(--text-body);
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  background-color: rgba(214, 194, 168, 0.05);
+  border-color: var(--primary);
+  box-shadow: 0 0 12px rgba(214, 194, 168, 0.15);
+}
+
+textarea {
+  resize: vertical;
+  min-height: 12em;
+  font-family: "Inter", sans-serif;
+}
+
+input[type="submit"] {
+  align-self: flex-start;
+  font-weight: 600;
+  border-radius: 0.5em;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  letter-spacing: 0.5px;
+  font-family: "Roboto Mono", monospace;
+}
+
+input[type="submit"]:hover {
+  background-color: var(--primary--light);
+  border-color: var(--primary--light);
+  box-shadow: 0 4px 12px rgba(214, 194, 168, 0.2);
+}
+
+input[type="submit"]:active {
+  transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+  form {
+    gap: 1.2em;
+  }
+
+  label {
+    font-size: 1.2rem;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    padding: 0.8em 1em;
+    font-size: 1.6rem;
+  }
+
+  textarea {
+    min-height: 10em;
+  }
+}

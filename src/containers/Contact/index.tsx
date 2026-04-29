@@ -1,6 +1,11 @@
+import Modal from "../../components/Modal";
+import { useState } from "react";
 import "./index.css";
+import ContactForm from "../../components/ContactForm";
 
 function Contact() {
+  const [showForm, setShowForm] = useState(false);
+
   return (
     <section className="contact" id="contact">
       <h2 className="contact__header">Let's work together</h2>
@@ -18,7 +23,12 @@ function Contact() {
         or send a quick message below.
       </p>
       <br />
-      <button className="btn">Drop a message</button>
+      <button className="btn" onClick={() => setShowForm(true)}>
+        Send a message
+      </button>
+      <Modal open={showForm} onClose={() => setShowForm(false)}>
+        <ContactForm onSuccess={() => setShowForm(false)} />
+      </Modal>
     </section>
   );
 }
