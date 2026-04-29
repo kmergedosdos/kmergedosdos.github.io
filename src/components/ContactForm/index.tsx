@@ -113,6 +113,18 @@ export default function ContactForm({ onSuccess }: ContactFormProps) {
           onChange={handleCaptcha}
         />
         <input
+          id="site_logo"
+          type="hidden"
+          name="site_logo"
+          value="https://kmergedosdos.github.io/favicon.svg"
+        />
+        <input
+          id="site_name"
+          type="hidden"
+          name="site_name"
+          value="Kmerge Dosdos"
+        />
+        <input
           type="submit"
           value={isLoading ? "Sending..." : "Send"}
           disabled={isLoading}
