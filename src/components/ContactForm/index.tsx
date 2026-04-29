@@ -1,11 +1,13 @@
 import "./index.css";
 
 import emailjs from "@emailjs/browser";
+import ReCAPTCHA from "react-google-recaptcha";
 import { useRef, useState } from "react";
 
 const EMAILJS_SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
 const EMAILJS_TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
 const EMAILJS_PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+const RECAPTCHA_SITE_KEY = import.meta.env.VITE_GOOGLE_RECAPTCHA_SITE_KEY;
 
 interface ContactFormProps {
   onSuccess?: () => void;
@@ -14,10 +16,21 @@ interface ContactFormProps {
 export default function ContactForm({ onSuccess }: ContactFormProps) {
   const form = useRef<HTMLFormElement>(null);
   const [isLoading, setIsLoading] = useState(false);
+  const [captchaToken, setCaptchaToken] = useState<string | null>(null);
+
+  const handleCaptcha = (token: string | null) => {
+    setCaptchaToken(token);
+  };
 
   const sendEmail: React.SubmitEventHandler<HTMLFormElement> = (e) => {
     e.preventDefault();
     if (!form.current) return;
+
+    // Block if captcha not completed
+    if (!captchaToken) {
+      alert("Please verify you're not a robot");
+      return;
+    }
 
     setIsLoading(true);
 
@@ -73,6 +86,11 @@ export default function ContactForm({ onSuccess }: ContactFormProps) {
             required
           />
         </div>
+        <ReCAPTCHA
+          theme="dark"
+          sitekey={RECAPTCHA_SITE_KEY}
+          onChange={handleCaptcha}
+        />
         <input
           type="submit"
           value={isLoading ? "Sending..." : "Send"}
