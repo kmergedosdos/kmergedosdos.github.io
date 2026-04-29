@@ -69,6 +69,22 @@ textarea {
   font-family: "Inter", sans-serif;
 }
 
+.message-input-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.char-count {
+  position: absolute;
+  bottom: 0.8em;
+  right: 1.2em;
+  font-size: 1.2rem;
+  color: var(--primary);
+  font-family: "Roboto Mono", monospace;
+  font-weight: 600;
+  pointer-events: none;
+}
+
 input[type="submit"] {
   align-self: flex-start;
   font-weight: 600;
