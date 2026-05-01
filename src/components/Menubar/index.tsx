@@ -23,7 +23,7 @@ function Menubar() {
             className={`menubar__card__item menubar__card__item--${isOpen ? "open" : "close"}`}
           >
             <a
-              href="https://github.com/kmergedosdos/kmergedosdos.github.io/blob/master/src/assets/KmergeBoimilleyrDosdos-Resume.pdf?raw=true"
+              href="https://github.com/kmergedosdos/kmergedosdos.github.io/blob/master/src/assets/Kmerge_Boimilleyr_Dosdos_Resume_2026.pdf?raw=true"
               download
             >
               Download my resume
